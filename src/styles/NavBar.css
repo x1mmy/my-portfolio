@@ -1,0 +1,124 @@
+/* src/styles/NavBar.css */
+
+.custom-navbar {
+    background-color: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .custom-navbar.scrolled {
+    background-color: rgba(10, 25, 47, 0.98);
+    border-bottom: 1px solid var(--lightest-navy);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Brand styling */
+  .navbar-brand {
+    font-weight: 700 !important;
+    font-size: 1.5rem !important;
+    color: var(--lightest-slate) !important;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: var(--green-bright) !important;
+  }
+  
+  /* Navigation links */
+  .custom-navbar .nav-link {
+    color: var(--lightest-slate) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: var(--green-bright) !important;
+  }
+  
+  /* Underline animation */
+  .custom-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--green-bright);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .custom-navbar .nav-link:hover::after {
+    width: 80%;
+  }
+  
+  /* Social links styling */
+  .social-links .nav-link {
+    padding: 0.5rem !important;
+    margin: 0 0.25rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links .nav-link:hover {
+    background-color: var(--green-tint);
+    transform: translateY(-2px);
+  }
+  
+  .social-links .nav-link svg {
+    font-size: 1.2rem;
+  }
+  
+  /* Mobile navbar styling */
+  .navbar-toggler {
+    border: 1px solid var(--green-bright);
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(100, 255, 218, 0.25);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28100, 255, 218, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  /* Mobile menu */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: var(--light-navy);
+      border-radius: 8px;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid var(--lightest-navy);
+    }
+  
+    .custom-navbar .nav-link {
+      margin: 0.25rem 0;
+      padding: 0.75rem 1rem !important;
+      border-radius: 4px;
+    }
+  
+    .custom-navbar .nav-link:hover {
+      background-color: var(--lightest-navy);
+    }
+  
+    .social-links {
+      border-top: 1px solid var(--lightest-navy);
+      padding-top: 1rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+  }
+  
+  /* Hide brand on very small screens if needed */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.25rem !important;
+    }
+  }
