@@ -22,22 +22,24 @@ function Home() {
         <div className="intro-content">
           {/* Animated greeting */}
           <div className="intro-greeting">
+
             <TypeAnimation
               sequence={[
-                'hi, your name here.',
+                'hi, zimraan here.',
                 1000,
               ]}
               wrapper="span"
               speed={50}
-              style={{ display: 'inline-block' }}
+              style={{ display: 'inline-block', color: 'var(--purple-bright)' }}
               cursor={true}
               repeat={0}
+              
             />
           </div>
 
           {/* Subtitle with fade-in animation */}
           <div className={`intro-subtitle ${showContent ? 'fade-in' : ''}`}>
-            I build things for the web.
+            I like to build things for the web.
           </div>
 
           {/* Description */}
@@ -49,7 +51,7 @@ function Home() {
 
           {/* Call to action */}
           <div className={`intro-cta ${showContent ? 'fade-in delay-2' : ''}`}>
-            <a href="mailto:your.email@gmail.com" className="cta-button">
+            <a href="mailto:zimraan2012@gmail.com" className="cta-button">
               <EmailRoundedIcon />
               <span>Get In Touch</span>
             </a>

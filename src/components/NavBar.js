@@ -29,7 +29,7 @@ function NavBar() {
       <Container>
         {/* Brand/Logo */}
         <Navbar.Brand href="#intro" className="navbar-brand">
-          Your Name
+          Zimraan Anjum
         </Navbar.Brand>
 
         {/* Mobile toggle */}
@@ -38,30 +38,29 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Main navigation links */}
           <Nav className="me-auto">
-            <Nav.Link href="#intro">Home</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#experience">Experience</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
 
           {/* Social links */}
           <Nav className="social-links">
             <Nav.Link 
-              href="mailto:your.email@gmail.com"
+              href="mailto:zimraan2012@gmail.com"
               title="Email"
             >
               <EmailRoundedIcon />
             </Nav.Link>
             <Nav.Link 
-              href="https://github.com/yourusername" 
+              href="https://github.com/x1mmy" 
               target="_blank"
               title="GitHub"
             >
               <GitHubIcon />
             </Nav.Link>
             <Nav.Link 
-              href="https://www.linkedin.com/in/yourprofile/" 
+              href="https://www.linkedin.com/in/zimraananjum/" 
               target="_blank"
               title="LinkedIn"
             >

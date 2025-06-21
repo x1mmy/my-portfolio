@@ -23,7 +23,7 @@
   }
   
   .navbar-brand:hover {
-    color: var(--green-bright) !important;
+    color: var(--purple-bright) !important;
   }
   
   /* Navigation links */
@@ -37,7 +37,7 @@
   }
   
   .custom-navbar .nav-link:hover {
-    color: var(--green-bright) !important;
+    color: var(--purple-bright) !important;
   }
   
   /* Underline animation */
@@ -48,7 +48,7 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: var(--green-bright);
+    background-color: var(--purple-bright);
     transition: all 0.3s ease;
     transform: translateX(-50%);
   }
@@ -66,7 +66,7 @@
   }
   
   .social-links .nav-link:hover {
-    background-color: var(--green-tint);
+    background-color: var(--purple-tint);
     transform: translateY(-2px);
   }
   
@@ -76,7 +76,7 @@
   
   /* Mobile navbar styling */
   .navbar-toggler {
-    border: 1px solid var(--green-bright);
+    border: 1px solid var(--purple-bright);
     padding: 0.25rem 0.5rem;
   }
   
