@@ -42,18 +42,18 @@ body {
 
 /* Selection styling */
 ::selection {
-  background: var(--green-tint);
-  color: var(--green-bright);
+  background: var(--purple-tint);
+  color: var(--purple-bright);
 }
 
 /* Link styling */
 a {
   text-decoration: none;
-  color: var(--green-bright);
+  color: var(--purple-bright);
   transition: all 0.3s ease;
 }
 
 a:hover {
-  color: var(--green-bright);
+  color: var(--purple-bright);
   text-decoration: none;
 }
