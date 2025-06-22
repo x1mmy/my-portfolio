@@ -17,7 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <section id="intro" className="intro-section">
+    <section id="home" className="intro-section">
       <div className="container-custom">
         <div className="intro-content">
           {/* Animated greeting */}

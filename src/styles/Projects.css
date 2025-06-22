@@ -1,0 +1,187 @@
+#projects {
+    margin: auto;
+    padding-top: 100px;
+  max-width: 1000px;
+  min-height: 50vh;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+  @media (max-width: 1080px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  .projects-card {
+    position: relative;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    background-color: var(--light-navy);
+    border-radius: 16px;
+  }
+  
+  .projects-card:hover {
+    transform: translateY(-7px);
+    background-color: var(--lightest-navy);
+  }
+  
+  .card-header {
+    margin-top: -20px;
+    display: flex;
+    padding: 1.25em 0 !important;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none !important;
+  }
+  .folder-icon {
+    color: var(--purple-bright);
+  }
+  
+  .external-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .github-icon {
+    margin-top: 6px;
+    color: var(--lightest-slate);
+    transition: color 0.2s ease;
+  }
+  .github-icon:hover {
+    color: var(--purple-bright);
+  }
+  
+  .open-icon {
+    padding-top: 6px;
+    margin-left: 10px;
+    color: var(--lightest-slate);
+    transition: color 0.2s ease;
+  }
+  
+  .open-icon:hover {
+    color: var(--purple-bright);
+  }
+  
+  .card-title {
+    font-family: "NTR", sans-serif;
+    color: var(--lightest-slate);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-desc {
+    font-family: "NTR", sans-serif;
+    color: var(--slate);
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  
+  .card-tech {
+    font-family: "NTR", sans-serif;
+    color: var(--slate);
+    font-size: 16px;
+  }
+  
+  /* Spotlight carousel */
+  .carousel.slide {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  
+  .carousel-inner {
+    min-height: 400px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: relative;
+    height: 400px;
+  }
+  
+  .carousel img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .caption-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 25, 47, 0.85); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .carousel-inner:hover {
+    transform: scale(1.01);
+  }
+  
+  .carousel-caption {
+    font-family: "NTR", sans-serif;
+    position: static;
+    text-align: center;
+    user-select: none;
+    padding: 0;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--lightest-slate);
+  }
+  
+  .carousel-caption p {
+    font-family: "NTR", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--lightest-slate);
+    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .carousel-caption p.techStack {
+    font-family: "NTR", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--purple-bright);
+    margin-top: 2rem;
+  }
+  
+  .carousel-indicators .active {
+    background-color: var(--purple-bright);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #projects {
+      height: unset;
+      padding-left: unset;
+      padding-right: unset;
+    }
+    .carousel {
+      display: none;
+    }
+  }

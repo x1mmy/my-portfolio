@@ -1,0 +1,95 @@
+#experience {
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .joblist-job-title {
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--lightest-slate);
+  }
+  
+  .joblist-job-company {
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    color: var(--purple-bright);
+    font-weight: bold;
+  }
+  
+  .joblist-duration {
+    font-family: "NTR", sans-serif;
+    font-size: 18px;
+    color: var(--slate);
+  }
+  
+  #vertical-tabpanel {
+    margin-top: -28px;
+    padding-left: 25px;
+  }
+  
+  ul {
+    list-style: none;
+    margin-left: -40px;
+  }
+  
+  .job-description li::before {
+    content: "▹    ";
+    color: var(--purple-bright);
+    position: absolute;
+    left: 0;
+  }
+  
+  .job-description li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    color: var(--slate);
+  }
+  
+  .job-description {
+    padding-top: 24px;
+    max-width: 650px;
+    font-family: "NTR", sans-serif;
+    font-size: 20px;
+  }
+  
+  .job-description a,
+  .job-description b {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  .job-description b {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  .role-container {
+    margin-bottom: 2rem;
+  }
+  
+  .joblist-skills {
+    font-size: 16px;
+    color: var(--slate);
+    font-family: "NTR", sans-serif;
+    margin-top: 1rem;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #experience {
+      padding-left: unset;
+      padding-right: unset;
+    }
+  
+    .joblist-job-title {
+      font-size: 22px;
+    }
+  
+    .joblist-job-company {
+      font-size: 22px;
+    }
+  }
