@@ -28,7 +28,7 @@ class Projects extends React.Component {
         techStack: "Next.JS, Node.JS, React.JS, Tailwind CSS",
         link: "https://github.com/x1mmy/B2C-Store-Application",
         open: "https://b2-c-store-application-web.vercel.app/",
-        image: "/assets/shopmma.png"
+        image: "/assets/ShopMMA.png"
       }
     };
 
