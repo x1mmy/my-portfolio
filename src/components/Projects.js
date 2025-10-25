@@ -29,6 +29,24 @@ class Projects extends React.Component {
         link: "https://github.com/x1mmy/B2C-Store-Application",
         open: "https://b2-c-store-application-web.vercel.app/",
         image: "/assets/ShopMMA.png"
+      },
+      "PreciousVault": {
+        title: "PreciousVault",
+        desc:
+          "Your all-in-one precious metals portfolio tracker with real-time AUD pricing",
+        techStack: "Next.JS, Node.JS, Tailwind CSS, Supabase",
+        link: "https://github.com/x1mmy/Precious-Vault",
+        open: "https://precious-vault.vercel.app/",
+        image: "/assets/PreciousVault.png"
+      },
+      "LifeCycle.": {
+        title: "LifeCycle.",
+        desc:
+          "Smart expiration tracking for small businesses—minimize waste, maximize efficiency.",
+        techStack: "Next.JS, Node.JS, Tailwind CSS, Supabase",
+        link: "https://github.com/x1mmy/lifecycle-landing",
+        open: "https://www.lifecycle.cloud//",
+        image: "/assets/LifeCycle.png"
       }
     };
 

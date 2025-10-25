@@ -82,7 +82,7 @@
 }
 
 .cta-button:hover {
-  color: var(--navy);
+  color: var(--white);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(178, 102, 255, 0.3);
   background: var(--purple-bright);
